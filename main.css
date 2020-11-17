@@ -92,11 +92,15 @@ body {
     background: #FFDC40;
 }
 
+.row--disbled:hover {
+    background: #d1d8e2;
+}
+
 .drugbutton {
     display: flex;
     background: no-repeat center url("assets/dragbutton.png");
     width: 40px;
-    cursor: pointer;
+    cursor: move;
 }
 
 .row_input {
@@ -119,9 +123,9 @@ body {
 }
 
 .bottom--select {
-    border-bottom: 3px solid #AA68FE;
+    border-bottom: 2px solid #AA68FE;
 }
 
 .top--select {
-    border-top: 3px solid #AA68FE;
+    border-top: 2px solid #AA68FE;
 }
