@@ -97,11 +97,11 @@ const getRow = str => {
         this.parentElement.remove();
         reorder();
     });
-    row.addEventListener('dragstart', dragStart)
-    row.addEventListener('dragleave', dragLeave)
-    row.addEventListener('dragover', dragOver)
-    row.addEventListener('dragend', dragEnd)
-    row.addEventListener('drop', onDdrop)
+    row.addEventListener('dragstart', dragStart);
+    row.addEventListener('dragleave', dragLeave);
+    row.addEventListener('dragover', dragOver);
+    row.addEventListener('dragend', dragEnd);
+    row.addEventListener('drop', onDdrop);
     row.appendChild(dragbutton);
     row.appendChild(input);
     row.appendChild(removebutton);
@@ -122,8 +122,3 @@ sortButton.addEventListener('click', function (e) {
 }, false);
 
 addRow()
-// addRow(1)
-// addRow(2)
-// addRow(3)
-// addRow(4)
-// addRow(5)
