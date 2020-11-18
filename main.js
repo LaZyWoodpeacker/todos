@@ -26,7 +26,9 @@ const chInarrs = (arr, trg, src, before) => {
 
 const dragStart = function (e) {
     selected = this;
-    setTimeout(() => this.classList.add("row--disbled"), 0);
+    setTimeout(() => {
+        this.classList.add("row--disbled")
+    }, 0);
 }
 const onDdrop = function (e) {
     if (selected && selected.style.order !== this.style.order) {
@@ -42,6 +44,8 @@ const dragEnd = function (e) {
     sorted = false;
     sortButton.style.opacity = 0.2;
     selected = null;
+    this.classList.remove('top--select');
+    this.classList.remove('bottom--select');
 }
 
 const dragOver = function (e) {
